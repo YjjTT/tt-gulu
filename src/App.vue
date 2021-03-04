@@ -1,6 +1,4 @@
 <template>
-  <div>hi <router-link to="/">To</router-link>
-  </div>
   <router-view />
 </template>
 
