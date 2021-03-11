@@ -12,7 +12,7 @@
 import { inject, Ref } from "vue";
 export default {
   setup() {
-    const menuVisible = inject<Ref<boolean>>("menuVisible");
+    const menuVisible = inject<Ref<boolean>>("menuVisible"); // get
     const toggleMenu = () => {
       menuVisible.value = !menuVisible.value;
     };
@@ -25,8 +25,13 @@ export default {
   background: pink;
   display: flex;
   padding: 16px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 10;
+  justify-content: center;
+  align-items: center;
   > .logo {
     max-width: 6em;
     margin-right: auto;
@@ -40,7 +45,6 @@ export default {
     }
   }
   > .toggleAside {
-    display: inline-block;
     width: 24px;
     height: 24px;
     background: red;
