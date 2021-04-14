@@ -38,7 +38,7 @@ export function md() {
     ],
     transforms: [{  // 用于 rollup // 插件
       test: context => context.path.endsWith('.md'),
-      transform: ({ code }) => mdToJs(code) 
+      transform: ({ code }) => mdToJs(code)
     }]
   }
 }
