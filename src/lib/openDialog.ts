@@ -11,20 +11,20 @@ export const openDialog = (options) => {
   const app = createApp({
     render() {
       return h(
-        Dialog,
-        {
-          visible: true,
-          "onUpdate:visible": (newVisible) => {
-            if (newVisible === false) {
-              close();
-            }
+          Dialog,
+          {
+            visible: true,
+            "onUpdate:visible": (newVisible) => {
+              if (newVisible === false) {
+                close();
+              }
+            },
+            ok, cancel
           },
-          ok, cancel
-        },
-        {
-          title,
-          content,
-        }
+          {
+            title,
+            content,
+          }
       );
     },
   });
