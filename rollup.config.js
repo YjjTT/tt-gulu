@@ -12,7 +12,7 @@ export default {
         globals: {
             vue: 'Vue'
         },
-        name: 'Tao',
+        name: 'TVue',
         file: 'dist/lib/gulu.js',
         format: 'umd',
         plugins: [terser()]

@@ -3,13 +3,13 @@
 打开终端运行下列命令：
 
 ```
-npm install wnlh-ui
+npm install jtvue-ui
 ```
 
 或
 
 ```
-yarn add wnlh-ui
+yarn add jtvue-ui
 ```
 
 下一节：[开始使用](#/doc/get-started)

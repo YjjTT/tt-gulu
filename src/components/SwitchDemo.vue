@@ -3,6 +3,7 @@
     <h1>Switch 组件示例 </h1>
     <Demo :component="Switch1Demo" />
     <Demo :component="Switch2Demo" />
+    <Attr :columns="columns" :data="data"/>
   </div>
 </template>
 
@@ -10,17 +11,30 @@
   import Switch1Demo from './Switch1.demo.vue'
   import Switch2Demo from './Switch2.demo.vue'
   import Demo from './Demo.vue'
+  import Attr from '../lib/Attr.vue'
+  import {columns} from "../lib/data";
   import {
     ref
   } from 'vue'
   export default {
     components: {
-      Demo
+      Demo, Attr
     },
     setup() {
+      const data = ref([
+        {
+          params: 'value',
+          desc: '是否选中',
+          type: 'boolean',
+          select: 'false / true',
+          default: 'false',
+        }
+      ]);
       return {
         Switch1Demo,
         Switch2Demo,
+        data,
+        columns
       }
     }
   }
