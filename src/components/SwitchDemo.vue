@@ -28,6 +28,13 @@
           type: 'boolean',
           select: 'false / true',
           default: 'false',
+        },
+        {
+          params: 'disabled',
+          desc: '是否禁用',
+          type: 'boolean',
+          select: 'false / true',
+          default: 'false',
         }
       ]);
       return {
